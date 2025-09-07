@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* Futuristic Background Canvas */
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #190572, #8c057a, #ee58d5);
+  z-index: -2;
+}
+
+/* Frosted glass effect on container */
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  margin: 60px auto;
+  max-width: 400px;
+}
+
+/* Header */
+header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  background: transparent;
+}
+
+.logo {
+  color: #00ffe1;
+  text-shadow: 0 0 10px #00ffe1;
+}
+
+/* Login Box */
+.login-box {
+  width: 100%;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00ffe1;
+  text-shadow: 0 0 8px #00ffe1;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-login {
+  background: #00ffe1;
+  color: #000;
+  box-shadow: 0 0 10px #00ffe1;
+}
+
+.btn-login:hover {
+  background: #00e1d2;
+}
+
+.btn-signup {
+  background: transparent;
+  border: 1px solid #00ffe1;
+  color: #00ffe1;
+}
+
+.btn-signup:hover {
+  background: #00ffe1;
+  color: black;
+}
+
+/* Description */
+.description {
+  text-align: center;
+}
+
+.description h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.description p {
+  font-size: 14px;
+  color: #ccc;
+}

@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost & Found - Post</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <header>
+    <div class="logo">Lost&Found</div>
+    <a href="index.html" class="logout-btn">Logout</a>
+  </header>
+
+  <div class="container">
+    <div class="post-box">
+      <h2>Create a Post</h2>
+      <form id="postForm">
+        <textarea id="description" placeholder="Describe the lost item..." required></textarea>
+        <input type="url" id="linkInput" placeholder="Link (optional)">
+        <input type="file" id="imageUpload" accept="image/*" />
+        <div id="previewBox" style="display:none;">
+          <img id="previewImage" style="width:100%; border-radius:10px; margin-top:10px;" />
+        </div>
+        <button class="btn-post" type="submit">Post</button>
+      </form>
+    </div>
+
+    <div class="search-box">
+      <h2>Search Posts</h2>
+      <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+
+    <div class="feed">
+      <h2>Recent Posts</h2>
+      <div id="postsContainer"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
